@@ -6,8 +6,8 @@ static const int gappx     = 10;                 /* gaps between windows */
 static unsigned int snap      = 32;       /* snap pixel */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Roboto Mono:size=12","Twitter Color Emoji:pixelsize=14" };
-static char dmenufont[]       = "Roboto Mono:size=12";
+static const char *fonts[]          = { "Comic Sans MS:size=12","Twitter Color Emoji:pixelsize=14" };
+static char dmenufont[]       = "Comic Sans MS:size=12";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
@@ -108,6 +108,7 @@ static const char *torrent[]     = { "transmission-gtk", NULL };
 static const char *volume[]  = { "pavucontrol", NULL };
 static const char *wanime[]  = { "wanime", NULL };
 static const char *web[]     = { "brave", NULL };
+static const char *killx[]     = { "killall", ".xinitrc", NULL };
 
 
 static Key keys[] = {
@@ -162,6 +163,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask|ControlMask,             XK_q,   spawn,           {.v = killx} },
 };
 
 /*
