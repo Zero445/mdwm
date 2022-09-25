@@ -21,7 +21,7 @@ static char *colors[][3] = {
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
-static const unsigned int alphas[][3]      = {
+static unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
 	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
 	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
@@ -85,6 +85,10 @@ ResourcePref resources[] = {
 		{ "nmaster",          	INTEGER, &nmaster },
 		{ "resizehints",       	INTEGER, &resizehints },
 		{ "mfact",      	 	FLOAT,   &mfact },
+		{ "baralpha",      	 	INTEGER,   &alphas[SchemeNorm][1] },
+		{ "borderalpha",      	INTEGER,   &alphas[SchemeNorm][2] },
+		{ "baralpha",      	 	INTEGER,   &alphas[SchemeSel][1] },
+		{ "borderalpha",      	INTEGER,   &alphas[SchemeSel][2] },
 };
 
 /* commands */
