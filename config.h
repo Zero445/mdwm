@@ -37,7 +37,9 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Pavucontrol",  NULL,       NULL,   1 << 7,       0,           -1 },
+	{ "Transmission-gtk",  NULL,  NULL,   1 << 8,       0,           -1 },
+	{ "SoulseekQt",  NULL,       NULL,   1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
@@ -142,7 +144,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 	{ MODKEY|ShiftMask,		XK_t,      cyclelayout,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_p,  setlayout,      {0} },
-	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[6]} },
+	{ MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[4]} },
+	{ MODKEY|ShiftMask|ControlMask, XK_m,      setlayout,      {.v = &layouts[5]} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
