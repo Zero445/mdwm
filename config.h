@@ -39,7 +39,9 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Pavucontrol",  NULL,       NULL,   1 << 7,       0,           -1 },
 	{ "Transmission-gtk",  NULL,  NULL,   1 << 8,       0,           -1 },
-	{ "SoulseekQt",  NULL,       NULL,   1 << 8,       0,           -1 },
+	{ "SoulseekQt",  NULL,       NULL,   1 << 8,        0,           -1 },
+	{ "tic80",  NULL,       NULL,        0,             1,           -1 },
+    {"GameConqueror.py",    NULL,   NULL,0,             1,           -1},
 };
 
 /* layout(s) */
@@ -98,10 +100,10 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-i" ,"-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
-static const char *filexp[]  = { "st","bash", "--init-file", "~/.lfst", NULL };
+static const char *filexp[]  = { "st","-e","lf", NULL };
 static const char *jack[]     = { "qjackctl", NULL };
-static const char *music[]  = { "st","bash", "--init-file", "~/.cmst", NULL };
-static const char *feed[]   = {"st","bash", "--init-file", "~/.nbst", NULL };
+static const char *music[]  = { "st","-e", "cmus", NULL };
+static const char *feed[]   = {"st", "-e", "newsboat", NULL };
 static const char *pgames[]  = { "gamea", NULL };
 static const char *rbooks[]  = { "rbooks", NULL };
 static const char *reaper[]     = { "reaper", NULL };
