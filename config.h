@@ -102,7 +102,7 @@ static const char *termcmd[]  = { "st", NULL };
 
 static const char *filexp[]  = { "st","-e","lf", NULL };
 static const char *jack[]     = { "qjackctl", NULL };
-static const char *music[]  = { "st","-e", "cmus", NULL };
+static const char *music[]  = { "st","-e", "systemd-inhibit", "cmus", NULL };
 static const char *feed[]   = {"st", "-e", "newsboat", NULL };
 static const char *pgames[]  = { "gamea", NULL };
 static const char *rbooks[]  = { "rbooks", NULL };
