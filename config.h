@@ -6,8 +6,8 @@ static const int gappx     = 10;                 /* gaps between windows */
 static unsigned int snap      = 32;       /* snap pixel */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Comic Sans MS:size=12","Twitter Color Emoji:pixelsize=14" };
-static char dmenufont[]       = "Comic Sans MS:size=12";
+static const char *fonts[]          = { "Comic Sans MS:size=11","Twitter Color Emoji:pixelsize=11" };
+static char dmenufont[]       = "Comic Sans MS:size=10";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
