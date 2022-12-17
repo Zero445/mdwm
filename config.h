@@ -111,7 +111,7 @@ static const char *rmanga[]  = { "rmanga", NULL };
 static const char *torrent[]     = { "transmission-gtk", NULL };
 static const char *volume[]  = { "pavucontrol", NULL };
 static const char *wanime[]  = { "wanime", NULL };
-static const char *web[]     = { "brave", NULL };
+static const char *web[]     = { "brave","--force-device-scale-factor=0.8", NULL };
 static const char *killx[]     = { "killall", ".xinitrc", NULL };
 
 
