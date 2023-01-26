@@ -108,6 +108,7 @@ static const char *pgames[]  = { "gamea", NULL };
 static const char *rbooks[]  = { "rbooks", NULL };
 static const char *reaper[]     = { "reaper", NULL };
 static const char *rmanga[]  = { "rmanga", NULL };
+static const char *favoritos[]  = { "favoritos", NULL };
 static const char *torrent[]     = { "transmission-gtk", NULL };
 static const char *volume[]  = { "pavucontrol", NULL };
 static const char *wanime[]  = { "wanime", NULL };
@@ -120,6 +121,7 @@ static Key keys[] = {
 
 
 	{ MODKEY,                       XK_a,      spawn,          {.v = wanime } },
+	{ MODKEY,                       XK_b,      spawn,          {.v = favoritos } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = filexp } },
 	{ MODKEY,                       XK_g,      spawn,          {.v = pgames } },
 	{ MODKEY,                       XK_j,      spawn,          {.v = jack } },
