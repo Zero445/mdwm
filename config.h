@@ -38,7 +38,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Pavucontrol",  NULL,       NULL,   1 << 7,       0,           -1 },
-	{ "Transmission-gtk",  NULL,  NULL,   1 << 8,       0,           -1 },
+	{ "transmission-gtk",  NULL,  NULL,   1 << 8,       0,           -1 },
 	{ "SoulseekQt",  NULL,       NULL,   1 << 8,        0,           -1 },
 	{ "tic80",  NULL,       NULL,        0,             1,           -1 },
     {"GameConqueror.py",    NULL,   NULL,0,             1,           -1},
