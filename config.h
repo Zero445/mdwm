@@ -101,7 +101,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 
 static const char *filexp[]  = { "st","-e","lf", NULL };
-static const char *jack[]     = { "qjackctl", NULL };
+static const char *jack[]     = { "qpwgraph", NULL };
 static const char *music[]  = { "st","-e", "systemd-inhibit", "cmus", NULL };
 static const char *feed[]   = {"st", "-e", "newsboat", NULL };
 static const char *pgames[]  = { "gamea", NULL };
