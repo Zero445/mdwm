@@ -14,8 +14,8 @@ static char normfgcolor[]           = "#bbbbbb";
 static char selfgcolor[]            = "#eeeeee";
 static char selbordercolor[]        = "#005577";
 static char selbgcolor[]            = "#005577";
-static const unsigned int baralpha = 0xb0;
-static const unsigned int borderalpha = 0x40;
+static const unsigned int baralpha = 0xff;
+static const unsigned int borderalpha = 0xff;
 static char *colors[][3] = {
 	/*               fg         bg         border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
@@ -101,18 +101,18 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 
 static const char *filexp[]  = { "st","-e","lf", NULL };
-static const char *jack[]     = { "qpwgraph", NULL };
-static const char *music[]  = { "st","-e", "systemd-inhibit", "cmus", NULL };
-static const char *feed[]   = {"st", "-e", "newsboat", NULL };
-static const char *pgames[]  = { "gamea", NULL };
-static const char *rbooks[]  = { "rbooks", NULL };
-static const char *reaper[]     = { "reaper", NULL };
-static const char *rmanga[]  = { "rmanga", NULL };
+static const char *jack[]     = { "", NULL };
+static const char *music[]  = { "", NULL };
+static const char *feed[]   = {"", NULL };
+static const char *pgames[]  = { "", NULL };
+static const char *rbooks[]  = { "", NULL };
+static const char *reaper[]     = { "", NULL };
+static const char *rmanga[]  = { "", NULL };
 static const char *favoritos[]  = { "favoritos", NULL };
-static const char *torrent[]     = { "transmission-gtk", NULL };
+static const char *torrent[]     = { "", NULL };
 static const char *volume[]  = { "pavucontrol", NULL };
-static const char *wanime[]  = { "wanime", NULL };
-static const char *web[]     = { "brave","--force-device-scale-factor=0.88", NULL };
+static const char *wanime[]  = { "", NULL };
+static const char *web[]     = { "qutebrowser", NULL };
 static const char *killx[]     = { "killall", ".xinitrc", NULL };
 
 
